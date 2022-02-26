@@ -1,8 +1,8 @@
 # Octopus Front End Test
 
-## Comments and considerations
-
 ![Demo image](./demo.gif)
+
+## Comments and considerations
 
 - I have updated some of the libraries already in place, like `react-scripts` and `@apollo/client`, and included some new ones related to testing libraries.
 - Added Typescript to the repository.
