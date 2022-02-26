@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartContainer{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+@media screen and (min-width: 678px) {
+  .container {
+    width: var(--octopus-container);
+  }
+}

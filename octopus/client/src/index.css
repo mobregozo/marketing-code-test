@@ -1,0 +1,16 @@
+body {
+  font-family: "Gotham", helvetica, arial, sans-serif;
+  margin: 0;
+  color: var(--font-color);
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --octopus-container: 670px;
+  --octopus-color-primary: #060f2a;
+  --octopus-color-primary_lighter: #2d4d7d;
+  --octopus-color-secondary: #01193b;
+  --octopus-color-tertiary: #fb1a7b;
+  --font-color: white;
+}

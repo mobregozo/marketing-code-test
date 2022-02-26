@@ -1,0 +1,19 @@
+
+.Footer{
+    background-color: var(--octopus-color-secondary);
+}
+.container {
+  width: 100%;
+  color: white;
+  line-height: 1.5rem;
+  opacity: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: small;
+}
+
+@media screen and (min-width: 678px) {
+  .container {
+    width: var(--octopus-container);
+  }
+}

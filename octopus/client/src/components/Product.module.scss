@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.secondarySection {
+  background-color: var(--octopus-color-secondary);
+}
+
+.productName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.productSet {
+  font-size: 1.5rem;
+  color: var(--octopus-color-primary_lighter);
+}
+
+.productImage {
+  width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  padding: 1rem;
+  max-height: 300px;
+}
+
+.specificationTable {
+  border-collapse: collapse;
+}
+
+.specificationTableBody tr {
+  border-bottom: solid 2px var(--octopus-color-secondary);
+}
+
+.specificationTableBody td {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+@media screen and (min-width: 678px) {
+  .container {
+    width: var(--octopus-container);
+  }
+  .productImage {
+    width: 200px;
+    padding: 0;
+    margin: 0;
+  }
+  .productName {
+    font-size: 3rem;
+  }
+}
