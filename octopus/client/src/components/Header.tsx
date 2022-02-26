@@ -1,6 +1,6 @@
 import React, { useContext, useMemo } from "react";
 import { CartContext } from "../contexts/CartContext";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 export const Header: React.FC = () => {
   const { cart } = useContext(CartContext);

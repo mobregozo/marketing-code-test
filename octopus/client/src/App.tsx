@@ -6,7 +6,7 @@ import { Header } from "./components/Header";
 import { ProductProfile } from "./components/ProductProfile";
 import { ProductType } from "./types";
 import { CartProvider } from "./contexts/CartContext";
-import styles from "./App.module.css";
+import styles from "./App.module.scss";
 
 type ProductData = {
   product: ProductType;
@@ -22,7 +22,7 @@ const App = () => {
   }
 
   return loading ? (
-    <span>loading...</span>
+    <span>Loading product...</span>
   ) : data?.product ? (
     <div className={styles.container}>
       <CartProvider>
