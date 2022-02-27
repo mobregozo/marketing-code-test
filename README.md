@@ -9,6 +9,7 @@
 - I have decided to use React Context API to handle the shopping cart, as I wanted to start simple. This can have some drawbacks if the application continues growing, as it can turn into something complex.
 - I have used `CSS modules` (by default on CRA), as it helps a lot in terms of scoping of the CSS and there's no need to use BEM or something similar for naming the CSS classes.
 - I have defined a few CSS variables for better-theming handling.
+- I have mainly used `rem` as a unit, as everything can scale based on the root `font-size`, depending on how the app scales that can be affected.
 - Some of the scaffolding and abstraction of the code was done thinking on the defined requirements if the applications continue growing, some refactoring might be needed.
 - Test coverage is not ideal, and can be improved, just focused on the bigger risks and requirements of the assignments. 
 
