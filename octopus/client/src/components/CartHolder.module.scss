@@ -34,24 +34,24 @@
 
 .addToCartContainer {
   width: 100%;
-}
-.addToCartButton {
-  cursor: pointer;
-  border: none;
-  font-size: 2rem;
-  margin: 1rem 0;
-  color: white;
-  border-radius: 0.25rem;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  width: 100%;
-  background: linear-gradient(
-    0deg,
-    var(--octopus-color-tertiary) 49%,
-    #fc68ac 60%
-  );
-  &:hover {
-    opacity: 0.7;
+  .addToCartButton {
+    cursor: pointer;
+    border: none;
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: white;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    width: 100%;
+    background: linear-gradient(
+      0deg,
+      var(--octopus-color-tertiary) 49%,
+      var(--octopus-color-tertiary_lighter) 60%
+    );
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 
@@ -64,7 +64,7 @@
   .counterContainerButtons {
     display: flex;
     align-items: center;
-    button {
+    .quantityButton {
       cursor: pointer;
       width: 3.5rem;
       height: 3.5rem;

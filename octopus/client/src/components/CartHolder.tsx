@@ -18,7 +18,7 @@ export const CartHolder: React.FC<{ product: ProductType }> = ({ product }) => {
 
   const addToCart = () => {
     addProduct(product, quantity);
-    setMessage(`${quantity} item/s were succesfully added to the cart`);
+    setMessage(`${quantity} item/s were successfully added to the cart`);
     setTimeout(() => {
       setMessage("");
     }, 2000);
@@ -42,18 +42,35 @@ export const CartHolder: React.FC<{ product: ProductType }> = ({ product }) => {
         <div className={styles.counterContainer}>
           <div className={styles.label}>QTY</div>
           <div className={styles.counterContainerButtons}>
-            <button aria-label="Decrease amount" disabled={quantity < 2} onClick={() => dereaseQuantity()}>
+            <button
+              aria-label="Decrease amount"
+              className={styles.quantityButton}
+              disabled={quantity < 2}
+              onClick={() => dereaseQuantity()}
+            >
               -
             </button>
             <div className={styles.quantity}>
-              <div aria-label="quantity" className={styles.number}>{quantity}</div>
+              <div aria-label="quantity" className={styles.number}>
+                {quantity}
+              </div>
             </div>
-            <button aria-label="Increase amount" onClick={() => increaseQuantity()}>+</button>
+            <button
+              className={styles.quantityButton}
+              aria-label="Increase amount"
+              onClick={() => increaseQuantity()}
+            >
+              +
+            </button>
           </div>
         </div>
       </div>
       <div className={styles.addToCartContainer}>
-        <button aria-label="Add to cart" className={styles.addToCartButton} onClick={() => addToCart()}>
+        <button
+          aria-label="Add to cart"
+          className={styles.addToCartButton}
+          onClick={() => addToCart()}
+        >
           Add to cart
         </button>
       </div>
